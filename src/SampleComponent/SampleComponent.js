@@ -7,6 +7,7 @@ export default function SampleComponent({background, color, children, ...restPro
   return (
       <Container background={background} color={color} {...restProps}>
           {children}
+          Hello World
       </Container>
   );
 };
