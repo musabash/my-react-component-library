@@ -1,6 +1,6 @@
 {
-  "name": "my-react-component-library",
-  "version": "1.0.0",
+  "name": "mbas-react-component-library",
+  "version": "1.0.2",
   "description": "",
   "main": "build/index.js",
   "module": "build/index.esm.js",
@@ -12,7 +12,8 @@
     "build-watch": "rollup -c -w",
     "test": "jest",
     "storybook": "start-storybook -p 6007",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -57,9 +58,11 @@
     "styled-components": "5.3.1"
   },
   "dependencies": {
+    "postcss": "^8.3.9",
     "prop-types": "15.7.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "rollup-plugin-postcss": "^4.0.1",
     "styled-components": "^5.3.1"
   }
 }
